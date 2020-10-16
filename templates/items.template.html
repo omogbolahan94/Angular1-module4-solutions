@@ -1,0 +1,11 @@
+</br>
+
+<div>Hello, Your Selected Items Are Ready. Be Happy And Enjoy!</div>
+
+</br>
+
+<ul>
+  <li ng-repeat="item in $ctrl.items">
+    {{item.name}}({{item.short_name}}), {{item.description}}, {{item.price_large | currency}}
+  </li>
+</ul>
