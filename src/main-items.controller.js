@@ -1,5 +1,5 @@
 (function () {
-    angular.module("MenuApp")
+    angular.module("menuApp")
     .controller("ItemsListController", ItemsListController);
   
 
