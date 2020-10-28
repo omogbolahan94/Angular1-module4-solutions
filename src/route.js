@@ -16,13 +16,13 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   // Home page
   .state('home', {
     url: '/',
-    templateUrl: '../templates/home.template.html'
+    templateUrl: 'src/templates/home.template.html'
   })
 
   // Premade list page
   .state('categoriesList', {
     url: '/categories-list',
-    templateUrl: '../templates/main-categories.template.html',
+    templateUrl: 'src/templates/main-categories.template.html',
     controller: 'CategoriesListController as categoriesList',
     resolve: {
       items: ['MenuDataService', function (MenuDataService) {
@@ -33,7 +33,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
 
   .state('categoriesList.itemsList', {
     //url: '/item-detail/{shortName}',
-    templateUrl: '../templates/main-items.template.html',
+    templateUrl: 'src/templates/main-items.template.html',
     controller: "ItemsListController as itemsList",
     params: {
         shortName: null
