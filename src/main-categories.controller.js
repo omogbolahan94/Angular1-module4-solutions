@@ -15,6 +15,7 @@
     
     promise.then( function(result) {
       categoriesList.items = result.data; 
+      console.log(categoriesList.items)
     })
   }
 
